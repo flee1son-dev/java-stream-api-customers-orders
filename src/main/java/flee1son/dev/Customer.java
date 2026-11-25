@@ -15,6 +15,15 @@ public class Customer {
         this.orderSet = orderSet;
     }
 
+    @Override
+    public String toString() {
+        return "\nCustomer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                "}\n";
+    }
+
     public Long getId() {
         return id;
     }

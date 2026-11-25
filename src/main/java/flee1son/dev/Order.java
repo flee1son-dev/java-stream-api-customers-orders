@@ -18,6 +18,16 @@ public class Order {
         this.productSet = productSet;
     }
 
+    @Override
+    public String toString() {
+        return "\nOrder{" +
+                "id=" + id +
+                ", orderDate=" + orderDate +
+                ", deliveryDate=" + deliveryDate +
+                ", status='" + status + '\'' +
+                "}\n";
+    }
+
     public Long getId() {
         return id;
     }
