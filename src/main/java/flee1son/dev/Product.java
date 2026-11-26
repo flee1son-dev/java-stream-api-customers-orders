@@ -1,0 +1,57 @@
+package flee1son.dev;
+
+import java.math.BigDecimal;
+
+public class Product {
+    private final Long id;
+    private String name;
+    private String category;
+    private BigDecimal price;
+
+    public Product(Long id, String name, String category, BigDecimal price) {
+        this.id = id;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return "\nProduct{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", category='" + category + '\'' +
+                ", price=" + price +
+                "}";
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public void setPrice(BigDecimal price) {
+        this.price = price;
+    }
+}
+
+
